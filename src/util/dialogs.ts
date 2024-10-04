@@ -26,8 +26,8 @@ export class Dialogs {
 
 	public static async askForApiKey(apiKey?: string): Promise<string | undefined> {
 		return window.showInputBox({
-			prompt: 'Enter your API key.',
-			placeHolder: 'Enter your API key',
+			prompt: 'Enter your API key',
+			placeHolder: 'Clockify extension needs the API key to work',
 			ignoreFocusOut: true,
 			value: apiKey,
 		});
